@@ -1,0 +1,25 @@
+{
+    "name": "example_manifest",
+    "root": "homedir/subdir/subsubdir",
+    "tests":
+    {
+        "CheckDuplicates":
+        {
+            "load": "load_duplicatetest.sql",
+            "steps": 
+            [
+                "query1.sql",
+                "query2.sql",
+                "query3.sql",
+                "query4.sql",
+                "query5.sql"
+            ]
+        },
+        "Query1":
+        {
+            "load": "lab2tests/load_query1.sql",
+            "steps":[ "query1.sql"]
+        }
+
+    }
+}
